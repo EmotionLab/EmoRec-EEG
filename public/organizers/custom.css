@@ -1,0 +1,33 @@
+.team-members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Adjust the space between items */
+    background-color: red;
+}
+
+.team-member {
+    /* Adjustments for individual team member styling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-members-container .team-member {
+    display: flex; /* Example property */
+}
+
+/*main > div > article {*/
+/*    background-color: blue;*/
+/*    width: 80vw;*/
+/*    max-width: 80vw !important;*/
+/*}*/
+
+.zgarbi {
+    background-color: yellow;
+    width: 80vw;
+}
+
+body {
+    background-color: yellow;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Organizers on EEGain workshop</title>
+    <link>//localhost:1313/organizers/</link>
+    <description>Recent content in Organizers on EEGain workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/organizers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Organizers</title>
+      <link>//localhost:1313/organizers/organizers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/organizers/organizers/</guid>
+      <description> Meet Our Expert Instructors Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maxwell Doe Instructor Maxwell Doe Instructor Maxwell Doe Instructor Maxwell Doe Instructor </description>
+    </item>
+  </channel>
+</rss>

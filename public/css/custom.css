@@ -1,0 +1,13 @@
+.team-members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Adjust the space between items */
+}
+
+.team-member {
+    /* Adjustments for individual team member styling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

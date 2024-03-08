@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Framework on EEGain workshop</title>
+    <link>//localhost:1313/tags/framework/</link>
+    <description>Recent content in Framework on EEGain workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Apr 2017 11:13:32 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/framework/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A GLASWEGIAN’S GLASGOW</title>
+      <link>//localhost:1313/program/chapter-3/</link>
+      <pubDate>Tue, 11 Apr 2017 11:13:32 -0400</pubDate>
+      <guid>//localhost:1313/program/chapter-3/</guid>
+      <description>Glasgow of the Empire I often wonder if Glasgow’s slow journey in tourism circles owes to the fact that its history, its origins and its romance were largely wiped out by its ‘success’. The city, at its economic peak, was second only to London in the far-reaching might of the British Empire. A vital cog in the unprecedented times of worldwide trade in the 18th Century, in came tobacco, sugar and cotton to be processed in Glasgow’s mills to then be exported at profit.</description>
+    </item>
+    <item>
+      <title>One Day in Glasgow | A Local’s Kick-Ass Itinerary</title>
+      <link>//localhost:1313/program/chapter-2/</link>
+      <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
+      <guid>//localhost:1313/program/chapter-2/</guid>
+      <description>Glasgow is a Scottish city with sass. Every visitor’s itinerary features the capital, Edinburgh, and rightfully so, as it is beautiful and steeped in history, but Glasgow is real, and Glasgow is raw.&#xA;It’s a big city with contrasting neighborhoods, deadly music and art scene, and most importantly, people with banter.&#xA;Edinburgh is Paris, Glasgow is Berlin, and here is your one-day in Glasgow itinerary curated with love by me, Gemma, the Fifer who ‘grew up’ in Glasgow.</description>
+    </item>
+    <item>
+      <title>GLASGOW CITY BREAK: MY PERFECT TEN</title>
+      <link>//localhost:1313/program/chapter-1/</link>
+      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      <guid>//localhost:1313/program/chapter-1/</guid>
+      <description>Edinburgh vs. Glasgow. Rival cities you say? Oh aye, there’s a wee bit of that – but it’s only playful. Our cities are wonderfully different; it’s a comfortable sort of contrast. Edinburgh is home, but I can see beyond our fairy-tale aesthetics and give our lively cousin through the west the credit she deserves.&#xA;Edinburgh is a blatantly beautiful woman, a real head-turner. Oh, and doesn’t she know it! Immensely photogenic, she’s a bit of a poser.</description>
+    </item>
+  </channel>
+</rss>

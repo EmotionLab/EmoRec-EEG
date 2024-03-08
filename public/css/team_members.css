@@ -1,0 +1,28 @@
+.team-members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+}
+
+.team-member h3,
+.team-member p,
+.team-member a {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .team-members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

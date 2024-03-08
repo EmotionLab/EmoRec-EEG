@@ -1,0 +1,80 @@
+.team-members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Adjust the space between items */
+    background-color: red;
+}
+
+.team-member {
+    /* Adjustments for individual team member styling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-members-container .team-member {
+    display: flex; /* Example property */
+}
+
+/*main > div > article {*/
+/*    background-color: blue;*/
+/*    width: 80vw;*/
+/*    max-width: 80vw !important;*/
+/*}*/
+
+.zgarbi {
+    background-color: yellow;
+}
+
+body.zgarbi main > div > article {
+    width: 80vw;
+    background-color: #6cc644;
+}
+
+.team-card {
+    display: flex;
+    background-color: #efeeee;
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    border-radius: 25px;
+}
+
+/*.img-wrapper {*/
+/*    max-width: 200px;*/
+/*    max-height: 200px;*/
+/*}*/
+
+.img-wrapper img {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+}
+
+.team-card_container {
+    display: flex;
+}
+
+.member-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.member_container {
+    padding: 0 30px;
+}
+
+.social-media-links {
+    display: flex;
+}
+.nested-links a{
+    display: flex;
+}
+
+/*https://i.postimg.cc/LsBpHZby/benedikt.jpg*/
+/*https://i.postimg.cc/zGNN4jdL/laura.jpg*/
+/*https://i.postimg.cc/25BxvQDw/Natia-Kukhilava.png*/
+/*https://i.postimg.cc/QtvGmk9d/tatia.jpg*/

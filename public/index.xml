@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EmoRec EEG</title>
+    <link>//localhost:60042/</link>
+    <description>Recent content on EmoRec EEG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="//localhost:60042/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keynotes &amp; Program committee</title>
+      <link>//localhost:60042/keynotes--program-committee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60042/keynotes--program-committee/</guid>
+      <description>PC members: Dr. Shaun Canavan, University of South Florida, USA, scanavan@usf.edu&#xA;Prof. Yuan-Pin Lin,National Sun Yat-Sen University, Taiwan, yplin0115@gmail.com&#xA;Dr. Mohammad Soleymani, University of Southern California, USA, soleymani@ict.usc.edu&#xA;Dr. Guangyi Zhang, Harvard University, USA, gzhang14@mgh.harvard.edu&#xA;Guanhua Zhang, University of Stuttgart, Germany, Guanhua.Zhang@vis.uni-stuttgart.de&#xA;Dr. Guozhen Zhao, Chinese Academy of Sciences, China zhaogz@psych.ac.cn&#xA;Prof. Wei-Long Zheng,Shanghai Jiao Tong University, China, weilonglive@gmail.com&#xA;Prof. Wenming Zheng, Southeast University, China, wenming_zheng@seu.edu.cn#&#xA;Keynote speakers Dr. Guillaume Chanel, University of Geneva and HEPIA, Switzerland, Switzerland, Guillaume.</description>
+    </item>
+    <item>
+      <title>Call for papers</title>
+      <link>//localhost:60042/call-for-papers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60042/call-for-papers/</guid>
+      <description>First Workshop on Generalizability of Emotion Recognition from EEG Signals at ACII’24&#xA;The first workshop on Generalizability of Emotion Recognition from EEG Signals (EmoRec EEG) at ACII’24 is designed to improve the comparability and generalizability of EEG emotion recognition approaches. We invite submissions on emotion recognition from Electroencephalography (EEG) signals in two tracks:&#xA;Challenge Track: In this track, we invite submission to addressing at least one of two well-defined EEG emotion recognition tasks.</description>
+    </item>
+    <item>
+      <title>Organizers</title>
+      <link>//localhost:60042/organizers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60042/organizers/</guid>
+      <description>Dr. Philipp Müller&#xA;German Research Center for Artificial Intelligence, Germany Dr. Benedikt Wirth&#xA;German Research Center for Artificial Intelligence, Germany Dr. Laura Ferrari&#xA;Scuola Superiore Sant’Anna, Italy &amp; INRIA Sophia Antipolis, France Tatia Tsmindashvili&#xA;Researcher at Muskhelishvili Institute of Computational Mathematics (MICM) Natia Kukhilava&#xA;Researcher at Muskhelishvili Institute of Computational Mathematics (MICM) Francois Bremond&#xA;Research Director DR1 at INRIA Sophia Antipolis Acknowledgements partially supported by European Commission HORIZON EUROPE WIDERA-2021-ACCESS-03 Grant Project GAIN (grant agreement no.</description>
+    </item>
+  </channel>
+</rss>
