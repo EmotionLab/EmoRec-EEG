@@ -13,4 +13,4 @@ menu:
 ---
 The EmoRec EEG workshop will be held at the 12th International Conference on Affective Computing & Intelligent Interaction in Glasgow, UK.  
 It aims to foster comparability, generalizability and ultimately progress in the field of EEG-based emotion recognition.  
-*The workshop will take place on the 15th of September 2024*  
+*The workshop will take place on the 15th of September 2024.*  

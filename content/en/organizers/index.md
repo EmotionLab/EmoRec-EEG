@@ -13,7 +13,8 @@ menu: main
 {{< /team-container >}}
 
 <br>  
-<br>  
+</br>  
 
 #### Acknowledgements
->> partially supported by European Commission HORIZON EUROPE WIDERA-2021-ACCESS-03 Grant Project GAIN (grant agreement no.101078950)
+>> The EmoRec EEG workshop is supported by the European Commission HORIZON EUROPE WIDERA-2021-ACCESS-03 Grant Project GAIN (grant agreement no.101078950).
+
