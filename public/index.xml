@@ -22,6 +22,13 @@
       <description>First Workshop on Generalizability of Emotion Recognition from EEG Signals at ACII’24&#xA;The first workshop on Generalizability of Emotion Recognition from EEG Signals (EmoRec EEG) at ACII’24 is designed to improve the comparability and generalizability of EEG emotion recognition approaches. We invite submissions on emotion recognition from Electroencephalography (EEG) signals in two tracks:&#xA;Challenge Track: In this track, we invite submissions addressing at least one of two well-defined EEG emotion recognition tasks.</description>
     </item>
     <item>
+      <title>Challenge</title>
+      <link>//localhost:1313/challenge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/challenge/</guid>
+      <description>Challenge rules and instructions The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the six most common datasets in the field of EEG-based emotion recognition (see table below). All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets. If you have trouble to gain access to a specific dataset, please let us know.</description>
+    </item>
+    <item>
       <title>Organizers</title>
       <link>//localhost:1313/organizers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
