@@ -1,7 +1,7 @@
 ---
 title: "Keynotes & Program Committee"
 weight: 4
-featured_image: '/images/glasgow4.jpg'
+featured_image: ''
 menu:
   main:
     weight: 4

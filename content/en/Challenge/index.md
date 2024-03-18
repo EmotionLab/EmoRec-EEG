@@ -3,7 +3,7 @@ title: Challenge
 weight: 5
 omit_header_text: true
 description: We'd love to hear from you
-featured_image: '/images/glasgow.jpg'
+featured_image: ''
 type: page
 menu: main
 

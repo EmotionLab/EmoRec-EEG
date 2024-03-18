@@ -19,7 +19,7 @@
       <link>//localhost:1313/call-for-papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/call-for-papers/</guid>
-      <description>First Workshop on Generalizability of Emotion Recognition from EEG Signals at ACII’24&#xA;The first workshop on Generalizability of Emotion Recognition from EEG Signals (EmoRec EEG) at ACII’24 is designed to improve the comparability and generalizability of EEG emotion recognition approaches. We invite submissions on emotion recognition from Electroencephalography (EEG) signals in two tracks:&#xA;Challenge Track: In this track, we invite submissions addressing at least one of two well-defined EEG emotion recognition tasks.</description>
+      <description>First Workshop on Generalizability of Emotion Recognition from EEG Signals at ACII’24 The first workshop on Generalizability of Emotion Recognition from EEG Signals (EmoRec EEG) at ACII’24 is designed to improve the comparability and generalizability of EEG emotion recognition approaches. We invite submissions on emotion recognition from Electroencephalography (EEG) signals in two tracks:&#xA;Challenge Track: In this track, we invite submissions addressing at least one of two well-defined EEG emotion recognition tasks.</description>
     </item>
     <item>
       <title>Challenge</title>
@@ -27,6 +27,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/challenge/</guid>
       <description>Challenge rules and instructions The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the six most common datasets in the field of EEG-based emotion recognition (see table below). All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets. If you have trouble to gain access to a specific dataset, please let us know.</description>
+    </item>
+    <item>
+      <title>Data Protection Notice</title>
+      <link>//localhost:1313/data-protection-notice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/data-protection-notice/</guid>
+      <description>The German Research Center for Artificial Intelligence (Deutsches Forschungszentrum für Künstliche Intelligenz GmbH (DFKI)) and its staff are committed to goal- and risk-oriented information privacy and the fundamental right to the protection of personal data. In this data protection policy we inform you about the processing of your personal data when visiting and using our web site.&#xA;Controller&#xA;Deutsches Forschungszentrum für Künstliche Intelligenz GmbH (DFKI)&#xA;Phone: +49 631 20575 0 info@dfki.</description>
+    </item>
+    <item>
+      <title>Legal Notice</title>
+      <link>//localhost:1313/legal-notice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/legal-notice/</guid>
+      <description>Responsible service provider Responsible for the content of the domain https://emotionlab.github.io/EmoRec-EEG/ from the point of view of § 5 TMG:&#xA;Deutsches Forschungszentrum für Künstliche Intelligenz GmbH (DFKI)&#xA;Management:&#xA;Prof. Dr. Antonio Krüger&#xA;Helmut Ditzer&#xA;Trippstadter Str. 122&#xA;67663 Kaiserslautern&#xA;Germany&#xA;Phone: +49 631 20575 0&#xA;info@dfki.de&#xA;Register Court: Amtsgericht Kaiserslautern&#xA;Register Number: HRB 2313&#xA;ID-Number: DE 148 646 973&#xA;The person responsible for the editorial content of the EmoRec-EEG website within the meaning of § 18 para.</description>
     </item>
     <item>
       <title>Organizers</title>
