@@ -24,6 +24,9 @@ The first workshop on Generalizability of Emotion Recognition from EEG Signals (
 **Submission Deadline:** June 12, 2024 <br>
 
 ---
+**Notification:** July 14, 2024 <br>
+
+---
 **Workshop Day:** September 15, 2024
 
 ---
