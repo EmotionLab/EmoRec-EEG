@@ -26,7 +26,7 @@
       <link>//localhost:1313/challenge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/challenge/</guid>
-      <description>Challenge rules and instructions The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the six most common datasets in the field of EEG-based emotion recognition (see table below). All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets. If you have trouble to gain access to a specific dataset, please let us know.</description>
+      <description>EEGAIN framework We provide the EEGAIN framework here for participants to use in the challenge. The EEGAIN framework substantially facilitates the programming effort it takes to run your own experiments. It includes standardized methods for data pre-processing, data splitting, evaluation metrics, and the ability to load the six datasets used in the challenge (see below) with only a single line of code. Here is a short introduction on how to use it:</description>
     </item>
     <item>
       <title>Data Protection Notice</title>
@@ -47,7 +47,7 @@
       <link>//localhost:1313/organizers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/organizers/</guid>
-      <description>Dr. Benedikt Wirth&#xA;German Research Center for Artificial Intelligence, Saarbrücken, Germany&#xD;Dr. Philipp Müller&#xA;German Research Center for Artificial Intelligence, Saarbrücken, Germany&#xD;Dr. Laura Ferrari&#xA;Scuola Superiore Sant’Anna, Pisa, Italy &amp; INRIA, Sophia Antipolis, France&#xD;Natia Kukhilava&#xA;Muskhelishvili Institute of Computational Mathematics (MICM), Tbilisi, Georgia&#xD;Tatia Tsmindashvili&#xA;Muskhelishvili Institute of Computational Mathematics (MICM), Tbilisi, Georgia&#xD;Dr. Francois Bremond&#xA;INRIA, Sophia Antipolis, France&#xD;Acknowledgements The EmoRec EEG workshop is supported by the European Commission HORIZON EUROPE WIDERA-2021-ACCESS-03 Grant Project GAIN (grant agreement no.</description>
+      <description>Dr. Benedikt Wirth&#xA;German Research Center for Artificial Intelligence, Saarbrücken, Germany&#xD;benedikt.wirth@dfki.de&#xD;Dr. Philipp Müller&#xA;German Research Center for Artificial Intelligence, Saarbrücken, Germany&#xD;philipp.mueller@dfki.de&#xD;Dr. Laura Ferrari&#xA;Scuola Superiore Sant’Anna, Pisa, Italy &amp; INRIA, Sophia Antipolis, France&#xD;laura.ferrari@inria.fr&#xD;Natia Kukhilava&#xA;Muskhelishvili Institute of Computational Mathematics, Tbilisi, Georgia&#xD;kukhilava.natia@gtu.ge&#xD;Tatia Tsmindashvili&#xA;Muskhelishvili Institute of Computational Mathematics, Tbilisi, Georgia&#xD;tsmindashvili.tatia@gtu.ge&#xD;Dr. Francois Bremond&#xA;INRIA, Sophia Antipolis, France&#xD;francois.bremond@inria.fr&#xD;Acknowledgements The EmoRec EEG workshop is supported by the European Commission HORIZON EUROPE WIDERA-2021-ACCESS-03 Grant Project GAIN (grant agreement no.</description>
     </item>
   </channel>
 </rss>

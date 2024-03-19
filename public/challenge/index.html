@@ -45,7 +45,7 @@
 <meta itemprop="name" content="Challenge">
 <meta itemprop="description" content="We&#39;d love to hear from you">
 
-<meta itemprop="wordCount" content="1011">
+<meta itemprop="wordCount" content="934">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Challenge"/>
 <meta name="twitter:description" content="We&#39;d love to hear from you"/>
 
@@ -162,8 +162,66 @@
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
-        <h2 id="challenge-rules-and-instructions">Challenge rules and instructions</h2>
-<p>The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the six most common datasets in the field of EEG-based emotion recognition (see table below). All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets. If you have trouble to gain access to a specific dataset, please let us know.</p>
+        <h2 id="eegain-framework">EEGAIN framework</h2>
+<p>We provide the EEGAIN framework <a href="https://github.com/EmotionLab/EEGain">here</a> for participants to use in the challenge. The EEGAIN framework substantially facilitates the programming effort it takes to run your own experiments. It includes standardized methods for data pre-processing, data splitting, evaluation metrics, and the ability to
+load the six datasets used in the challenge (see below) with only a single line of code. Here is a short introduction on how to use it:</p>
+<ol>
+<li>Clone the github repository and install all libraries contained in requirements.txt.</li>
+<li>Run the ssh file:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>run_cli.sh
+</span></span></code></pre></div><ol start="3">
+<li>Within the ssh-file, arguments are given to</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>run_cli.py &lt;arguments&gt;
+</span></span></code></pre></div><p>You can adapt these arguments within the sh file according to your specific intentions:</p>
+<ul>
+<li><code>--model_name</code> Selects a custom or pre-trained model. The pretrained implemented pre-trained models are:
+<ul>
+<li><code>TSception</code></li>
+<li><code>EEGNet</code></li>
+<li><code>DeepconvNet</code></li>
+<li><code>Shallow</code></li>
+</ul>
+</li>
+<li><code>--data_name</code> Chooses a custom name or a name of predefined datasets. The predefined datasets are:
+<ul>
+<li><code>DEAP</code></li>
+<li><code>MAHNOB</code></li>
+<li><code>AMIGOS</code></li>
+<li><code>DREAMER</code></li>
+<li><code>SEED</code></li>
+<li><code>SEEDIV</code></li>
+</ul>
+</li>
+<li><code>--data_path</code> Specifies the directory where the data files are saved.</li>
+<li><code>--log_dir</code> Specifies the directory where the log files will be saved.</li>
+<li><code>--overal_log_file</code> Specifies the name of the log file that will be created.</li>
+<li><code>--label_type</code> Specifies whether data is separated into classes based on valence or arousal. This argument has no effect on the Seed and SEED IV dataset because these datasets have fixed splits based on categorical labels. You can choose the following options:
+<ul>
+<li><code>V</code>: Valence</li>
+<li><code>A</code>: Arousal</li>
+</ul>
+</li>
+<li><code>--num_epochs</code> Sets the number of epochs for training.</li>
+<li><code>--batch_size</code> Specifies the batch size for training.</li>
+<li><code>--lr</code> Specifies the learning rate for training.</li>
+<li><code>--sampling_r</code> Specifies the sampling rate of the EEG data.</li>
+<li><code>--window</code> Specifies the length of the EEG segments (in seconds).</li>
+<li><code>--weight_decay</code> Specifies the weight decay ratio for regularization.</li>
+<li><code>--label_smoothing</code> Smoothing factor applied to the labels to make them less extreme.</li>
+<li><code>--dropout_rate</code> Probability at which outputs of the layer are dropped out.</li>
+<li><code>--num_classes</code> Specifies the number of classes of the classification problem. Please leave this argument at a value of 2 because we conceptualized the task as a binary classification problem.</li>
+<li><code>--channels</code> Specifies the number of channels for the dataset. Set this argument to 14 for AMIGOS and DREAMER, 32 for MAHNOB and DEAP, and to 62 for SEED and SEED IV.</li>
+<li><code>--split_type</code> Specifies the type of train-test splitting. Please use only the following two splitting types as any other splits will disqualify your submission:
+<ul>
+<li><code>LOTO</code>: Leave one trial out. Use this split for the person-dependent task.</li>
+<li><code>LOSO_Fixed</code>: Creates a fixed 75/25 train-test split that is mandatory for the person-independent task (see below).</li>
+</ul>
+</li>
+</ul>
+<h2 id="challenge-rules-and-instructions">Challenge rules and instructions</h2>
+<p>The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the six most common datasets in the field of EEG-based emotion recognition (see table below). <strong>The framework supports dataset uploading in one line of code, but you need to have downloaded the datasets first.</strong> All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets. If you have trouble to gain access to a specific dataset, please let us know.</p>
 <hr>
 <table>
 <thead>
@@ -274,68 +332,8 @@
 </ul>
 </li>
 </ol>
-<h2 id="eegain-framework">EEGAIN framework</h2>
-<p>We provide the EEGAIN framework <a href="https://github.com/EmotionLab/EEGain">here</a> for participants to use for the challenge. The EEGAIN framework provides easy-to-use functions for standardized pre-processing, training, and evaluation. Here is a short introduction on how to use it.</p>
-<ol>
-<li>Clone the github repository and install all libraries contained in requirements.txt.</li>
-<li>Run the ssh file:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>run_cli.sh
-</span></span></code></pre></div><ol start="3">
-<li>Within the ssh-file, arguments are given to</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>run_cli.py &lt;arguments&gt;
-</span></span></code></pre></div><p>You can adapt these arguments within the sh file according to your specific intentions:</p>
-<ul>
-<li><code>--model_name</code> Selects a custom or pre-trained model. The pretrained implemented pre-trained models are:
-<ul>
-<li><code>TSception</code></li>
-<li><code>EEGNet</code></li>
-<li><code>DeepconvNet</code></li>
-<li><code>Shallow</code></li>
-</ul>
-</li>
-<li><code>--data_name</code> Chooses a custom name or a name of predefined datasets. The predefined datasets are:
-<ul>
-<li><code>DEAP</code></li>
-<li><code>MAHNOB</code></li>
-<li><code>AMIGOS</code></li>
-<li><code>DREAMER</code></li>
-<li><code>SEED</code></li>
-<li><code>SEEDIV</code></li>
-</ul>
-</li>
-<li><code>--log_dir</code> Specifies the directory where the log files are saved.</li>
-<li><code>--overal_log_file</code> Specifies the name of the log file created.</li>
-<li><code>--label_type</code> Specifies whether data is separated into classes based on valence or arousal. This argument has no effect on the Seed and SEED IV dataset because these datasets have fixed splits based on categorical labels. You can choose the following options:
-<ul>
-<li><code>V</code>: Valence</li>
-<li><code>A</code>: Arousal</li>
-</ul>
-</li>
-<li><code>--num_epochs</code> Sets the number of epochs for training.</li>
-<li><code>--batch_size</code> Specifies the batch size for training.</li>
-<li><code>--lr</code> Specifies the learning rate for training.</li>
-<li><code>--sampling_r</code> Specifies the sampling rate of the EEG data.</li>
-<li><code>--window</code> Specifies the length of the EEG segments (in seconds).</li>
-<li><code>--s_rate</code> Specifies the sampling rate of the EEG data. Some model implementations require <code>sampling_r</code> while others require <code>s_rate</code>.</li>
-<li><code>--n_time</code> Specifies the number of data points per training sample.</li>
-<li><code>--weight_decay</code> Specifies the weight decay ratio for regularization.</li>
-<li><code>--label_smoothing</code> Smoothing factor applied to the labels to make them less extreme.</li>
-<li><code>--dropout_rate</code> Probability at which outputs of the layer are dropped out.</li>
-<li><code>--num_classes</code> Specifies the number of classes of the classification problem. Please leave this argument at a value of 2 because we conceptualized the task as a binary classification problem.</li>
-<li><code>--n_class</code> Also specifies the number of classes of the classification problem. Some models require the argument <code>num_classes</code>, other <code>n_class</code>. Please leave also at a value of 2.</li>
-<li><code>--channels</code> Specifies the number of channels for the dataset. Set this argument to 14 for AMIGOS and DREAMER, 32 for MAHNOB and DEAP, and to 62 for SEED and SEED IV.</li>
-<li><code>--nchan</code> Specifies the number of channels for the dataset. Some model implementations require <code>channels</code>, others <code>nchan</code>. Use in the same way as <code>channels</code>.</li>
-<li><code>--ground_truth_threshold</code> Threshold at which continuous ground-truth labels are split. Do not use a different value than 4.5 here as this is the fixed split used for the challenge. Changing this value will disqualify your submission! In case of the SEED or the SEED IV dataset, this argument does not have an effect because these datasets use categorical labels with fixed splits.</li>
-<li><code>--dropout_rate</code> Probability at which outputs of the layer are dropped out.</li>
-<li><code>--split_type</code> Specifies the type of train-test splitting. Please use only the following two splitting types as any other splits will disqualify your submission:
-<ul>
-<li><code>LOTO</code>: Leave one trial out. Use this split for the person-dependent task.</li>
-<li><code>LOSO_Fixed</code>: Creates the fixed 75/25 train-test split that is mandatory for the person-independent task.</li>
-</ul>
-</li>
-</ul>
+<h2 id="baseline">Baseline</h2>
+<p>Coming soon</p>
 
       </div>
     </article>
