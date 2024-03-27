@@ -11,7 +11,7 @@ menu: main
 
 ## First Workshop on Generalizability of Emotion Recognition from EEG Signals at ACII’24
 
-The first workshop on Generalizability of Emotion Recognition from EEG Signals (EmoRec EEG) at ACII’24 is designed to improve the comparability and generalizability of EEG emotion recognition approaches. We invite submissions on emotion recognition from Electroencephalography (EEG) signals in two tracks:
+The first workshop on Generalizability of Emotion Recognition from EEG Signals (EmoRec EEG) at ACII’24 is designed to improve the comparability and generalizability of EEG emotion recognition approaches. We invite submissions on emotion recognition from EEG signals in two tracks:
 1. Challenge Track: In this track, we invite submissions addressing at least one of two well-defined EEG emotion recognition tasks. Submissions in this track may either have the form of a full paper (max. 7 pages + 1 page for references) or of a short paper (max. 4 pages + 1 page for references). 
    - Person-dependent task: In this task, participants will develop models that are trained and tested on the data of a specific participant. 
    - Person-independent task: Here, participants will develop approaches for EEG emotion recognition that generalize across users. A fixed train/test split will be used for evaluation.

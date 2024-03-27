@@ -17,5 +17,5 @@ It aims to foster comparability, generalizability and ultimately progress in the
 
 ## Mailing list
 
-If you would like to participate in the workshop, please sign up to our mailing list by sending a request to emorec_eeg_workshop@inria.fr.\
-We will distribute any news and future developments regarding the workshop (e.g. clarification of the challenge rules if there are any uncertainties) via the mailing list.
+To stay up-to-date, please sign up to our mailing list by sending a request to emorec_eeg_workshop@inria.fr.\
+We will distribute any news and future developments regarding the workshop (e.g., clarification of the challenge rules if there are any uncertainties) via the mailing list.
