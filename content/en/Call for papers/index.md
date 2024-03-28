@@ -1,9 +1,8 @@
 ---
-title: Call for Papers
+title: "Call for Papers"
 weight: 5
 omit_header_text: true
-description: We'd love to hear from you
-featured_image: ''
+featured_image: '/images/Dalle3.webp'
 type: page
 menu: main
 

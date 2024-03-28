@@ -45,7 +45,7 @@
 <meta itemprop="name" content="Challenge">
 <meta itemprop="description" content="We&#39;d love to hear from you">
 
-<meta itemprop="wordCount" content="923">
+<meta itemprop="wordCount" content="913">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Challenge"/>
 <meta name="twitter:description" content="We&#39;d love to hear from you"/>
 
@@ -56,8 +56,9 @@
 
     
 
-  <header>
-    <div class="bg-black">
+  
+  <header class="cover bg-top" style="background-image: url('//localhost:1313/images/Dalle4.webp');">
+    <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -148,6 +149,9 @@
   </div>
 </nav>
 
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+      </div>
     </div>
   </header>
 
@@ -163,7 +167,7 @@
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
         <h2 id="challenge-rules-and-instructions">Challenge rules and instructions</h2>
-<p>The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the five most common datasets in the field of EEG-based emotion recognition (see table below). <strong>The framework supports dataset uploading in one line of code, but you need to have downloaded the datasets first.</strong> All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets. If you have trouble to gain access to a specific dataset, please let us know.</p>
+<p>The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the four most common datasets in the field of EEG-based emotion recognition (see table below). <strong>The framework supports dataset uploading in one line of code, but you need to have downloaded the datasets first.</strong> All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets. If you have trouble to gain access to a specific dataset, please let us know.</p>
 <hr>
 <table>
 <thead>
@@ -180,17 +184,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>DEAP</td>
-<td style="text-align:center">Wet</td>
-<td style="text-align:center">32</td>
-<td style="text-align:center">512</td>
-<td style="text-align:center">32</td>
-<td style="text-align:center">40</td>
-<td style="text-align:center">1 min</td>
-<td style="text-align:center">1-9</td>
-<td style="text-align:center">continuous</td>
-</tr>
 <tr>
 <td>MAHNOB</td>
 <td style="text-align:center">Wet</td>
@@ -225,15 +218,15 @@
 <td style="text-align:center">discrete</td>
 </tr>
 <tr>
-<td>AMIGOS</td>
+<td>DREAMER</td>
 <td style="text-align:center">Dry</td>
 <td style="text-align:center">14</td>
 <td style="text-align:center">128</td>
-<td style="text-align:center">40</td>
-<td style="text-align:center">16</td>
-<td style="text-align:center">ca. 2 min</td>
-<td style="text-align:center">1-9</td>
-<td style="text-align:center">continuous</td>
+<td style="text-align:center">23</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">ca. 3 min</td>
+<td style="text-align:center">1-5</td>
+<td style="text-align:center">discrete</td>
 </tr>
 </tbody>
 </table>
@@ -245,8 +238,8 @@
 <ul>
 <li>Custom EEG pre-processing steps (e.g., filtering, downsampling, windowing) may be used, but these should be consistent accross participants and meticulously documented and thus reproducible.</li>
 <li>The leave-one-trial out (LOTO) cross-validation needs to be used for training/testing.</li>
-<li>Importantly, the same procedure must be used for all of the participants contained in the five datasets.</li>
-<li>For each participant in the five datasets, accuracy must be calculated, separately for valence and arousal. Subsequently accuracy must be averaged across participants (separately for valence and arousal).</li>
+<li>Importantly, the same procedure must be used for all of the participants contained in the four datasets.</li>
+<li>For each participant in the four datasets, accuracy must be calculated, separately for valence and arousal. Subsequently accuracy must be averaged across participants (separately for valence and arousal).</li>
 <li>The harmonic mean of accuracy for valence and arousal will be the critical measure in order to rank the submissions.</li>
 <li>The code used to train the models needs to be part of the submssion so the program committee can be sure that the training procedure was not adjusted to individual participants/datasets.</li>
 </ul>
@@ -265,7 +258,7 @@
 </ol>
 <h2 id="eegain-framework">EEGAIN framework</h2>
 <p>We provide the EEGAIN framework <a href="https://github.com/EmotionLab/EEGain">here</a> for participants to use in the challenge. The EEGAIN framework substantially facilitates the programming effort it takes to run your own experiments. It includes standardized methods for data pre-processing, data splitting, evaluation metrics, and the ability to
-load the five datasets used in the challenge (see below) with only a single line of code. Here is a short introduction on how to use it:</p>
+load the four datasets used in the challenge (see below) with only a single line of code. Here is a short introduction on how to use it:</p>
 <ol>
 <li>Clone the github repository and install all libraries contained in requirements.txt.</li>
 <li>Run the ssh file:</li>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Call for Papers on EmoRec EEG</title>
+    <link>//localhost:1313/call-for-papers/</link>
+    <description>Recent content in Call for Papers on EmoRec EEG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/call-for-papers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Call for Papers</title>
+      <link>//localhost:1313/call-for-papers/dalle2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/call-for-papers/dalle2/</guid>
+      <description>First Workshop on Generalizability of Emotion Recognition from EEG Signals at ACII’24 The first workshop on Generalizability of Emotion Recognition from EEG Signals (EmoRec EEG) at ACII’24 is designed to improve the comparability and generalizability of EEG emotion recognition approaches. We invite submissions on emotion recognition from EEG signals in two tracks:&#xA;Challenge Track: In this track, we invite submissions addressing at least one of two well-defined EEG emotion recognition tasks.</description>
+    </item>
+  </channel>
+</rss>

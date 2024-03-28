@@ -1,7 +1,8 @@
 ---
 title: "Keynotes & Program Committee"
 weight: 4
-featured_image: ''
+omit_header_text: true
+featured_image: '/images/Dalle2.webp'
 menu:
   main:
     weight: 4

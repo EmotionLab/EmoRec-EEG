@@ -26,7 +26,7 @@
       <link>//localhost:1313/challenge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/challenge/</guid>
-      <description>Challenge rules and instructions The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the five most common datasets in the field of EEG-based emotion recognition (see table below). The framework supports dataset uploading in one line of code, but you need to have downloaded the datasets first. All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets.</description>
+      <description>Challenge rules and instructions The aim of the challenge is to foster generalizability of EEG-based emotion-recognition approaches. To this end, the challenge uses the four most common datasets in the field of EEG-based emotion recognition (see table below). The framework supports dataset uploading in one line of code, but you need to have downloaded the datasets first. All of these sets are freely available from the respective authors. We are in contact with the authors of all datasets.</description>
     </item>
     <item>
       <title>Data Protection Notice</title>

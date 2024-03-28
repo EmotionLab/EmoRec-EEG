@@ -1,7 +1,7 @@
 ---
 title: Organizers
 weight: 6
-featured_image: ''
+featured_image: '/images/Dalle5.webp'
 omit_header_text: true
 description: We'd love to hear from you
 type: page
