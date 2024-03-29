@@ -37,6 +37,8 @@ The challenge contains two tasks. Submissions to the Challenge Track of the work
    - As evaluation metrics, accuracy, weighted F1, and confusion matrizes will be available in the framework. The mean of the weighted F1 for valence and arousal will be the critical measure to rank the submissions and declare the winner.
    - The code used to train the models needs to be part of the submssion in order to rule out optimization on the test set.
 
+**The first three ranking papers on each challenge will receive winner's certificates.**
+
 ## EEGAIN framework
 
 We provide the EEGAIN framework [here](https://github.com/EmotionLab/EEGain) for participants to use in the challenge. The EEGAIN framework substantially facilitates the programming effort it takes to run your own experiments. It includes standardized methods for data pre-processing, data splitting, evaluation metrics, and the ability to
