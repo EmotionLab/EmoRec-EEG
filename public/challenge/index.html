@@ -45,7 +45,7 @@
 <meta itemprop="name" content="Challenge">
 <meta itemprop="description" content="We&#39;d love to hear from you">
 
-<meta itemprop="wordCount" content="913">
+<meta itemprop="wordCount" content="941">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Challenge"/>
 <meta name="twitter:description" content="We&#39;d love to hear from you"/>
 
@@ -236,23 +236,22 @@
 <li>
 <p>Person-dependent task: In this task, data from the same participant is used to train and test the models. The specific rules for this task are:</p>
 <ul>
-<li>Custom EEG pre-processing steps (e.g., filtering, downsampling, windowing) may be used, but these should be consistent accross participants and meticulously documented and thus reproducible.</li>
+<li>Custom EEG pre-processing steps (e.g., filtering, downsampling, windowing) may be used, but these must be consistent accross datasets, meticulously documented and thus reproducible.</li>
 <li>The leave-one-trial out (LOTO) cross-validation needs to be used for training/testing.</li>
 <li>Importantly, the same procedure must be used for all of the participants contained in the four datasets.</li>
-<li>For each participant in the four datasets, accuracy must be calculated, separately for valence and arousal. Subsequently accuracy must be averaged across participants (separately for valence and arousal).</li>
-<li>The harmonic mean of accuracy for valence and arousal will be the critical measure in order to rank the submissions.</li>
-<li>The code used to train the models needs to be part of the submssion so the program committee can be sure that the training procedure was not adjusted to individual participants/datasets.</li>
+<li>For each participant in the four datasets, weighted F1 must be calculated, separately for valence and arousal. Subsequently weighted F1-scores must be averaged across participants (separately for valence and arousal).</li>
+<li>The mean of weighted F1 for valence and arousal will be the critical measure in order to rank the submissions and to declare the winner.</li>
+<li>The code used to train the models needs to be part of the submssion in order to rule out adjustment of training procedures on the individual test sets.</li>
 </ul>
 </li>
 <li>
 <p>Person-independent task: The task is to create an EEG-based emotion recognition approach that generalizes across subjects from different datasets. The specific rules for this challenge are:</p>
 <ul>
-<li>Custom EEG pre-processing steps (e.g., filtering, downsampling, windowing) may be used, but these should be consistent accross datasets and meticulously documented and thus reproducible.</li>
-<li>A fixed train-test split has to be used. The training set contains 75% of all participants across datasets, the test set 25%.</li>
-<li>This means that data from a given participant are either part of the training or the test set - never of both sets.</li>
+<li>Custom EEG pre-processing steps (e.g., filtering, downsampling, windowing) may be used, but these must be consistent accross datasets, meticulously documented and thus reproducible.</li>
+<li>A fixed train-test split has to be used and it is defined in the framework. The split contains 75% of participants for the training and 25% for the test set. This means that data from a given participant are either part of the training or the test set - never of both sets. The models can be tested on mixed participants from all datasets and/or on participants from the same dataset.</li>
 <li>During training, all datasets may be used jointly to improve performance.</li>
-<li>As evaluation metric, please use accuracy, separately for valence and arousal. The harmonic mean of accuracy for valence and arousal will be the critical measure in order to rank the submissions.</li>
-<li>The code used to train the models needs to be part of the submssion so the program committee can be sure that the models were not optimized on the test set.</li>
+<li>As evaluation metrics, accuracy, weighted F1, and confusion matrizes will be available in the framework. The mean of the weighted F1 for valence and arousal will be the critical measure to rank the submissions and declare the winner.</li>
+<li>The code used to train the models needs to be part of the submssion in order to rule out optimization on the test set.</li>
 </ul>
 </li>
 </ol>

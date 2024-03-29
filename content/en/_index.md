@@ -19,3 +19,6 @@ It aims to foster comparability, generalizability and ultimately progress in the
 
 To stay up-to-date, please sign up to our mailing list by sending a request to emorec_eeg_workshop@inria.fr.\
 We will distribute any news and future developments regarding the workshop (e.g., clarification of the challenge rules if there are any uncertainties) via the mailing list.
+
+## News
+2024/03/28: We decided to exclude the AMIGOS and the DEAP datasets from the challenge because it was to difficult for potential participants to get access.
