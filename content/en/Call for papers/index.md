@@ -21,7 +21,7 @@ The first workshop on Generalizability of Emotion Recognition from EEG Signals (
 2. Reflection Track: Here, we invite submissions concerned with the problem of generalizability of EEG emotion recognition. Both technical papers (max. 4 pages main text + 1 page references) and position papers (max. 2 pages main text + 1 page references) are possible. In contrast to the challenge track, the focus of technical papers is not to improve performance on the evaluation datasets, but to generate new insights into the problem. Evaluation on the challenge datasets is not required but will still be valued. Position papers may be concerned with all aspects pertaining to generalizability of EEG emotion recognition, including - but not limited to - evaluation protocols, data recording protocols, emotion elicitation techniques, EEG hardware considerations, and publishing bias.
 
 
-## **Important Dates**
+## Important Dates
 ---
 **Submission Deadline:** June 12, 2024 <br>
 
@@ -32,3 +32,7 @@ The first workshop on Generalizability of Emotion Recognition from EEG Signals (
 **Workshop Day:** September 15, 2024
 
 ---
+
+## Submission
+
+Papers can be submitted via ACII's [submission portal](https://easychair.org/account2/signin?l=9161489160958518132) In the portal, you will have the option to specifically submit to the workshop.
