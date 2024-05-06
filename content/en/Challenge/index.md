@@ -39,6 +39,13 @@ The challenge contains two tasks. Submissions to the Challenge Track of the work
 
 **The first three ranking papers on each challenge will receive winner's certificates.**
 
+## Hyper-parameter tuning
+
+Hyper-parameters may not be tuned to the test split of each individual dataset because this strategy does not allow for generalization across datasets. Instead, one of the following strategies must be applied:
+
+1. Fixed hyper-parameters are used across the test splits of the different datasets.
+2. From the training split of each dataset, a specific proportion is retained as validation set in order to tune hyper-parameters for each dataset.
+
 ## EEGAIN framework
 
 We provide the EEGAIN framework [here](https://github.com/EmotionLab/EEGain) for participants to use in the challenge. The EEGAIN framework substantially facilitates the programming effort it takes to run your own experiments. It includes standardized methods for data pre-processing, data splitting, evaluation metrics, and the ability to

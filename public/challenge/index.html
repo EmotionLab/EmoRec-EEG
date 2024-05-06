@@ -45,7 +45,7 @@
 <meta itemprop="name" content="Challenge">
 <meta itemprop="description" content="We&#39;d love to hear from you">
 
-<meta itemprop="wordCount" content="953">
+<meta itemprop="wordCount" content="1022">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Challenge"/>
 <meta name="twitter:description" content="We&#39;d love to hear from you"/>
 
@@ -256,6 +256,12 @@
 </li>
 </ol>
 <p><strong>The first three ranking papers on each challenge will receive winner&rsquo;s certificates.</strong></p>
+<h2 id="hyper-parameter-tuning">Hyper-parameter tuning</h2>
+<p>Hyper-parameters may not be tuned to the test split of each individual dataset because this strategy does not allow for generalization across datasets. Instead, one of the following strategies must be applied:</p>
+<ol>
+<li>Fixed hyper-parameters are used across the test splits of the different datasets.</li>
+<li>From the training split of each dataset, a specific proportion is retained as validation set in order to tune hyper-parameters for each dataset.</li>
+</ol>
 <h2 id="eegain-framework">EEGAIN framework</h2>
 <p>We provide the EEGAIN framework <a href="https://github.com/EmotionLab/EEGain">here</a> for participants to use in the challenge. The EEGAIN framework substantially facilitates the programming effort it takes to run your own experiments. It includes standardized methods for data pre-processing, data splitting, evaluation metrics, and the ability to
 load the four datasets used in the challenge (see below) with only a single line of code. Here is a short introduction on how to use it:</p>
