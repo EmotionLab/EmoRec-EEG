@@ -22,6 +22,8 @@ We will distribute any news and future developments regarding the workshop (e.g.
 
 ## News
 
-2024/04/15: The full-paper format has been changed and is now allowed to contain unlimited references
+2024/05/06: The rules regarding hyper-parameter tuing were specified and can be viewed on the Challenge page.
+
+2024/04/15: The full-paper format has been changed and is now allowed to contain unlimited references.
 
 2024/03/28: We decided to exclude the AMIGOS and the DEAP datasets from the challenge because it was to difficult for potential participants to get access.
