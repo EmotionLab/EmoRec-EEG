@@ -22,6 +22,8 @@ We will distribute any news and future developments regarding the workshop (e.g.
 
 ## News
 
+2024/07/09: The baselines against which participants should test their models are now reported on the Challenge page.
+
 2024/05/06: The rules regarding hyper-parameter tuing were specified and can be viewed on the Challenge page.
 
 2024/04/15: The full-paper format has been changed and is now allowed to contain unlimited references.

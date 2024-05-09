@@ -45,7 +45,7 @@
 <meta itemprop="name" content="Challenge">
 <meta itemprop="description" content="We&#39;d love to hear from you">
 
-<meta itemprop="wordCount" content="1022">
+<meta itemprop="wordCount" content="2196">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Challenge"/>
 <meta name="twitter:description" content="We&#39;d love to hear from you"/>
 
@@ -321,8 +321,717 @@ load the four datasets used in the challenge (see below) with only a single line
 </li>
 </ul>
 <h2 id="baseline">Baseline</h2>
-<p>Coming soon</p>
+<p><strong>Person-dependent</strong></p>
+<p>The following table shows baselines for the person-dependent task. We provide two types of baselines here: Random baselines and results that were obtained with an out-of-the-box Tsception approach. The Tsception approach was trained for 500 epochs with a learning rate of 0.001 and no weight decay.</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th style="text-align:center">Window Size</th>
+<th style="text-align:center">Dataset</th>
+<th style="text-align:center">Measure</th>
+<th style="text-align:center">Accuracy</th>
+<th style="text-align:center">SD_Acc</th>
+<th style="text-align:center">Weighted F1</th>
+<th style="text-align:center">SD _F1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Mahnob-HCI</td>
+<td style="text-align:center">valence</td>
+<td style="text-align:center">0.62</td>
+<td style="text-align:center">0.10</td>
+<td style="text-align:center">0.62</td>
+<td style="text-align:center">0.10</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Mahnob-HCI</td>
+<td style="text-align:center">arousal</td>
+<td style="text-align:center">0.61</td>
+<td style="text-align:center">0.13</td>
+<td style="text-align:center">0.60</td>
+<td style="text-align:center">0.13</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">DREAMER</td>
+<td style="text-align:center">valence</td>
+<td style="text-align:center">0.72</td>
+<td style="text-align:center">0.14</td>
+<td style="text-align:center">0.72</td>
+<td style="text-align:center">0.14</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">DREAMER</td>
+<td style="text-align:center">arousal</td>
+<td style="text-align:center">0.79</td>
+<td style="text-align:center">0.16</td>
+<td style="text-align:center">0.79</td>
+<td style="text-align:center">0.16</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">SEED</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.42</td>
+<td style="text-align:center">0.12</td>
+<td style="text-align:center">0.41</td>
+<td style="text-align:center">0.12</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">SEED-IV</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.34</td>
+<td style="text-align:center">0.08</td>
+<td style="text-align:center">0.33</td>
+<td style="text-align:center">0.10</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Mahnob-HCI</td>
+<td style="text-align:center">valence</td>
+<td style="text-align:center">0.53</td>
+<td style="text-align:center">0.05</td>
+<td style="text-align:center">0.53</td>
+<td style="text-align:center">0.05</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Mahnob-HCI</td>
+<td style="text-align:center">arousal</td>
+<td style="text-align:center">0.57</td>
+<td style="text-align:center">0.13</td>
+<td style="text-align:center">0.57</td>
+<td style="text-align:center">0.13</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">DREAMER</td>
+<td style="text-align:center">valence</td>
+<td style="text-align:center">0.71</td>
+<td style="text-align:center">0.10</td>
+<td style="text-align:center">0.71</td>
+<td style="text-align:center">0.10</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">DREAMER</td>
+<td style="text-align:center">arousal</td>
+<td style="text-align:center">0.78</td>
+<td style="text-align:center">0.15</td>
+<td style="text-align:center">0.78</td>
+<td style="text-align:center">0.15</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">SEED</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.28</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.28</td>
+<td style="text-align:center">0.02</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">SEED-IV</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.20</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.20</td>
+<td style="text-align:center">0.02</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Person-independent</strong></p>
+<p>The following table shows baselines for the person-independent task. We provide two types of baselines here: Random baselines and results that were obtained with an out-of-the-box Tsception approach. The Tsception approach was trained for 500 epochs with a learning rate of 0.001 and no weight decay. As can be seen, the out-of-the box Tsception approach only performs substantially above the random baseline for the DREAMER dataset.</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th style="text-align:center">Window Size</th>
+<th style="text-align:center">Dataset</th>
+<th style="text-align:center">Measure</th>
+<th style="text-align:center">Accuracy</th>
+<th style="text-align:center">Weighted F1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Mahnob-HCI</td>
+<td style="text-align:center">valence</td>
+<td style="text-align:center">0.52</td>
+<td style="text-align:center">0.52</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Mahnob-HCI</td>
+<td style="text-align:center">arousal</td>
+<td style="text-align:center">0.54</td>
+<td style="text-align:center">0.54</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">DREAMER</td>
+<td style="text-align:center">valence</td>
+<td style="text-align:center">0.76</td>
+<td style="text-align:center">0.73</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">DREAMER</td>
+<td style="text-align:center">arousal</td>
+<td style="text-align:center">0.84</td>
+<td style="text-align:center">0.79</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Seed</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.47</td>
+<td style="text-align:center">0.47</td>
+</tr>
+<tr>
+<td>Tsception</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Seed-IV</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.37</td>
+<td style="text-align:center">0.35</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Mahnob-hci</td>
+<td style="text-align:center">Arousal</td>
+<td style="text-align:center">0.49</td>
+<td style="text-align:center">0.50</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Mahnob-hci</td>
+<td style="text-align:center">Valence</td>
+<td style="text-align:center">0.50</td>
+<td style="text-align:center">0.50</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Dreamer</td>
+<td style="text-align:center">Arousal</td>
+<td style="text-align:center">0.77</td>
+<td style="text-align:center">0.77</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Dreamer</td>
+<td style="text-align:center">Valence</td>
+<td style="text-align:center">0.72</td>
+<td style="text-align:center">0.72</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Seed</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.32</td>
+<td style="text-align:center">0.32</td>
+</tr>
+<tr>
+<td>random</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Seed-IV</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">0.24</td>
+<td style="text-align:center">0.24</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>The following prompts were used to obtain the baselines reported above</p>
+<pre tabindex="0"><code>python3 run_cli.py \
+--model_name=TSception \
+--data_name=SeedIV \
+--data_path=&#39;path_to/eeg_raw_data&#39; \
+--log_dir=&#34;logsso1/&#34; \
+--overal_log_file=&#34;loso_seedIV.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=500 \
+--batch_size=64 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=4 \
+--channels=62 \
+--split_type=&#34;LOSO_Fixed&#34;
 
+python3 run_cli.py \
+--model_name=TSception \
+--data_name=Seed \
+--data_path=&#39;path_to/Preprocessed_EEG&#39; \
+--log_dir=&#34;logss1/&#34; \
+--overal_log_file=&#34;loso_seed.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=500 \
+--batch_size=64 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=3 \
+--channels=62 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python run_cli.py \
+--model_name=TSception \
+--data_name=MAHNOB \
+--data_path=&#39;path_to/Sessions&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loso_mahnob_arousal.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=500 \
+--batch_size=32 \
+--lr=0.0001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0.01 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=32 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python run_cli.py \
+--model_name=TSception \
+--data_name=MAHNOB \
+--data_path=&#39;path_to/Sessions&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loso_mahnob_valence.txt&#34; \
+--label_type=&#34;V&#34; \
+--num_epochs=500 \
+--batch_size=32 \
+--lr=0.0001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0.01 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=32 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python run_cli.py \
+--model_name=TSception \
+--data_name=DREAMER \
+--data_path=&#39;path_to/DREAMER.mat&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loso_dreamer_arousal.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=500 \
+--batch_size=32 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=4 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=14 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python run_cli.py \
+--model_name=TSception \
+--data_name=DREAMER \
+--data_path=&#39;path_to/DREAMER.mat&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loso_dreamer_valence.txt&#34; \
+--label_type=&#34;V&#34; \
+--num_epochs=500 \
+--batch_size=32 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=4 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=14 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python3 run_cli.py \
+--model_name=TSception \
+--data_name=SeedIV \
+--data_path=&#39;path_to/eeg_raw_data&#39; \
+--log_dir=&#34;logsso1/&#34; \
+--overal_log_file=&#34;loto_seedIV.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=500 \
+--batch_size=64 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=4 \
+--channels=62 \
+--split_type=&#34;LOTO&#34;
+
+python3 run_cli.py \
+--model_name=TSception \
+--data_name=Seed \
+--data_path=&#39;path_to/Preprocessed_EEG&#39; \
+--log_dir=&#34;logss1/&#34; \
+--overal_log_file=&#34;loto_seed.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=500 \
+--batch_size=64 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=3 \
+--channels=62 \
+--split_type=&#34;LOTO&#34;
+
+python run_cli.py \
+--model_name=TSception \
+--data_name=MAHNOB \
+--data_path=&#39;path_to/Sessions&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loto_mahnob_arousal.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=500 \
+--batch_size=32 \
+--lr=0.0001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0.01 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=32 \
+--split_type=&#34;LOTO&#34;
+
+python run_cli.py \
+--model_name=TSception \
+--data_name=MAHNOB \
+--data_path=&#39;path_to/Sessions&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loto_mahnob_valence.txt&#34; \
+--label_type=&#34;V&#34; \
+--num_epochs=500 \
+--batch_size=32 \
+--lr=0.0001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0.01 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=32 \
+--split_type=&#34;LOTO&#34;
+
+python run_cli.py \
+--model_name=TSception \
+--data_name=DREAMER \
+--data_path=&#39;path_to/DREAMER.mat&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loto_dreamer_arousal.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=500 \
+--batch_size=32 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=4 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=14 \
+--split_type=&#34;LOTO&#34;
+
+python run_cli.py \
+--model_name=TSception \
+--data_name=DREAMER \
+--data_path=&#39;path_to/DREAMER.mat&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loto_dreamer_valence.txt&#34; \
+--label_type=&#34;V&#34; \
+--num_epochs=500 \
+--batch_size=32 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=4 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=14 \
+--split_type=&#34;LOTO&#34;
+
+python3 run_cli.py \
+--model_name=RANDOM \
+--data_name=SeedIV \
+--data_path=&#39;path_to/eeg_raw_data&#39; \
+--log_dir=&#34;logsso1/&#34; \
+--overal_log_file=&#34;loso_seedIV_random.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=1 \
+--batch_size=64 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=4 \
+--channels=62 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python3 run_cli.py \
+--model_name=RANDOM \
+--data_name=Seed \
+--data_path=&#39;path_to/Preprocessed_EEG&#39; \
+--log_dir=&#34;logss1/&#34; \
+--overal_log_file=&#34;loso_seed_random.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=1 \
+--batch_size=64 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=3 \
+--channels=62 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python run_cli.py \
+--model_name=RANDOM \
+--data_name=MAHNOB \
+--data_path=&#39;path_to/Sessions&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loso_mahnob_arousal_random.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=1 \
+--batch_size=32 \
+--lr=0.0001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0.01 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=32 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python run_cli.py \
+--model_name=RANDOM \
+--data_name=MAHNOB \
+--data_path=&#39;path_to/Sessions&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loso_mahnob_valence_random.txt&#34; \
+--label_type=&#34;V&#34; \
+--num_epochs=1 \
+--batch_size=32 \
+--lr=0.0001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0.01 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=32 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python run_cli.py \
+--model_name=RANDOM \
+--data_name=DREAMER \
+--data_path=&#39;path_to/DREAMER.mat&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loso_dreamer_arousal_random.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=1 \
+--batch_size=32 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=4 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=14 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python run_cli.py \
+--model_name=RANDOM \
+--data_name=DREAMER \
+--data_path=&#39;path_to/DREAMER.mat&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loso_dreamer_valence_random.txt&#34; \
+--label_type=&#34;V&#34; \
+--num_epochs=1 \
+--batch_size=32 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=4 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=14 \
+--split_type=&#34;LOSO_Fixed&#34;
+
+python3 run_cli.py \
+--model_name=RANDOM \
+--data_name=SeedIV \
+--data_path=&#39;path_to/eeg_raw_data&#39; \
+--log_dir=&#34;logsso1/&#34; \
+--overal_log_file=&#34;loto_seedIV_random.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=1 \
+--batch_size=64 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=4 \
+--channels=62 \
+--split_type=&#34;LOTO&#34;
+
+python3 run_cli.py \
+--model_name=RANDOM \
+--data_name=Seed \
+--data_path=&#39;path_to/Preprocessed_EEG&#39; \
+--log_dir=&#34;logss1/&#34; \
+--overal_log_file=&#34;loto_seed_random.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=1 \
+--batch_size=64 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=3 \
+--channels=62 \
+--split_type=&#34;LOTO&#34;
+
+python run_cli.py \
+--model_name=RANDOM \
+--data_name=MAHNOB \
+--data_path=&#39;path_to/Sessions&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loto_mahnob_arousal_random.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=1 \
+--batch_size=32 \
+--lr=0.0001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0.01 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=32 \
+--split_type=&#34;LOTO&#34;
+
+python run_cli.py \
+--model_name=RANDOM \
+--data_name=MAHNOB \
+--data_path=&#39;path_to/Sessions&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loto_mahnob_valence_random.txt&#34; \
+--label_type=&#34;V&#34; \
+--num_epochs=1 \
+--batch_size=32 \
+--lr=0.0001 \
+--sampling_r=128 \
+--window=2 \
+--weight_decay=0.01 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=32 \
+--split_type=&#34;LOTO&#34;
+
+python run_cli.py \
+--model_name=RANDOM \
+--data_name=DREAMER \
+--data_path=&#39;path_to/DREAMER.mat&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loto_dreamer_arousal_random.txt&#34; \
+--label_type=&#34;A&#34; \
+--num_epochs=1 \
+--batch_size=32 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=4 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=14 \
+--split_type=&#34;LOTO&#34;
+
+python run_cli.py \
+--model_name=RANDOM \
+--data_name=DREAMER \
+--data_path=&#39;path_to/DREAMER.mat&#39; \
+--log_dir=&#34;logs/&#34; \
+--overal_log_file=&#34;loto_dreamer_valence_random.txt&#34; \
+--label_type=&#34;V&#34; \
+--num_epochs=1 \
+--batch_size=32 \
+--lr=0.001 \
+--sampling_r=128 \
+--window=4 \
+--weight_decay=0 \
+--label_smoothing=0.01 \
+--dropout_rate=0.5 \
+--num_classes=2 \
+--channels=14 \
+--split_type=&#34;LOTO&#34;
+</code></pre>
       </div>
     </article>
   </div>
