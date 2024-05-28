@@ -99,7 +99,7 @@ You can adapt these arguments within the sh file according to your specific inte
 
 **Person-dependent**
 
-The following table shows baselines for the person-dependent task. We provide two types of baselines here: Random baselines and results that were obtained with an out-of-the-box Tsception approach. The Tsception approach was trained for 500 epochs with a learning rate of 0.001 and no weight decay.
+The following table shows baselines for the person-dependent task. We provide two types of baselines here: Random baselines and results that were obtained with an out-of-the-box Tsception approach. The Tsception approach was trained for 500 epochs with a learning rate of 0.001 and no weight decay. The window size was 2 seconds.
 
 
 ---
@@ -115,7 +115,7 @@ The following table shows baselines for the person-dependent task. We provide tw
 
 **Person-independent**
 
-The following table shows baselines for the person-independent task. We provide two types of baselines here: Random baselines and results that were obtained with an out-of-the-box Tsception approach. The Tsception approach was trained for 500 epochs with a learning rate of 0.001 and no weight decay. As can be seen, the out-of-the box Tsception approach only performs substantially above the random baseline for the DREAMER dataset.
+The following table shows baselines for the person-independent task. We provide two types of baselines here: Random baselines and results that were obtained with an out-of-the-box Tsception approach. The Tsception approach was trained for 500 epochs with a learning rate of 0.001 and no weight decay. The window size was 2 seconds. As can be seen, the out-of-the box Tsception approach only performs substantially above the random baseline for the DREAMER dataset.
 
 ---
 | Dataset |  Measure | Tsception Accuracy | Random Accuracy | Tsception Weighted F1 | Random Weighted F1 |
