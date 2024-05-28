@@ -45,7 +45,7 @@
 <meta itemprop="name" content="Challenge">
 <meta itemprop="description" content="We&#39;d love to hear from you">
 
-<meta itemprop="wordCount" content="2196">
+<meta itemprop="wordCount" content="2133">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Challenge"/>
 <meta name="twitter:description" content="We&#39;d love to hear from you"/>
 
@@ -327,136 +327,62 @@ load the four datasets used in the challenge (see below) with only a single line
 <table>
 <thead>
 <tr>
-<th>Model</th>
-<th style="text-align:center">Window Size</th>
-<th style="text-align:center">Dataset</th>
+<th>Dataset</th>
 <th style="text-align:center">Measure</th>
-<th style="text-align:center">Accuracy</th>
-<th style="text-align:center">SD_Acc</th>
-<th style="text-align:center">Weighted F1</th>
-<th style="text-align:center">SD _F1</th>
+<th style="text-align:center">Tsception Accuracy (SD)</th>
+<th style="text-align:center">Random Accuracy (SD)</th>
+<th style="text-align:center">Tsception Weighted F1 (SD)</th>
+<th style="text-align:center">Random Weighted F1 (SD)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">Mahnob-HCI</td>
+<td>MAHNOB</td>
 <td style="text-align:center">valence</td>
-<td style="text-align:center">0.62</td>
-<td style="text-align:center">0.10</td>
-<td style="text-align:center">0.62</td>
-<td style="text-align:center">0.10</td>
+<td style="text-align:center">0.62 (0.10)</td>
+<td style="text-align:center">0.53 (0.05)</td>
+<td style="text-align:center">0.62 (0.10)</td>
+<td style="text-align:center">0.53 (0.05)</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">Mahnob-HCI</td>
+<td>MAHNOB</td>
 <td style="text-align:center">arousal</td>
-<td style="text-align:center">0.61</td>
-<td style="text-align:center">0.13</td>
-<td style="text-align:center">0.60</td>
-<td style="text-align:center">0.13</td>
+<td style="text-align:center">0.61 (0.13)</td>
+<td style="text-align:center">0.57 (0.13)</td>
+<td style="text-align:center">0.6 (0.13)</td>
+<td style="text-align:center">0.57 (0.13)</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">DREAMER</td>
+<td>DREAMER</td>
 <td style="text-align:center">valence</td>
-<td style="text-align:center">0.72</td>
-<td style="text-align:center">0.14</td>
-<td style="text-align:center">0.72</td>
-<td style="text-align:center">0.14</td>
+<td style="text-align:center">0.72 (0.14)</td>
+<td style="text-align:center">0.71 (0.10)</td>
+<td style="text-align:center">0.72 (0.14)</td>
+<td style="text-align:center">0.71 (0.10)</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">DREAMER</td>
+<td>DREAMER</td>
 <td style="text-align:center">arousal</td>
-<td style="text-align:center">0.79</td>
-<td style="text-align:center">0.16</td>
-<td style="text-align:center">0.79</td>
-<td style="text-align:center">0.16</td>
+<td style="text-align:center">0.79 (0.16)</td>
+<td style="text-align:center">0.78 (0.15)</td>
+<td style="text-align:center">0.79 (0.16)</td>
+<td style="text-align:center">0.78 (0.15)</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">SEED</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">0.42</td>
-<td style="text-align:center">0.12</td>
-<td style="text-align:center">0.41</td>
-<td style="text-align:center">0.12</td>
+<td>SEED</td>
+<td style="text-align:center">discrete</td>
+<td style="text-align:center">0.42 (0.12)</td>
+<td style="text-align:center">0.28 (0.02)</td>
+<td style="text-align:center">0.41 (0.12)</td>
+<td style="text-align:center">0.28 (0.02)</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">SEED-IV</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">0.34</td>
-<td style="text-align:center">0.08</td>
-<td style="text-align:center">0.33</td>
-<td style="text-align:center">0.10</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">Mahnob-HCI</td>
-<td style="text-align:center">valence</td>
-<td style="text-align:center">0.53</td>
-<td style="text-align:center">0.05</td>
-<td style="text-align:center">0.53</td>
-<td style="text-align:center">0.05</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">Mahnob-HCI</td>
-<td style="text-align:center">arousal</td>
-<td style="text-align:center">0.57</td>
-<td style="text-align:center">0.13</td>
-<td style="text-align:center">0.57</td>
-<td style="text-align:center">0.13</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">DREAMER</td>
-<td style="text-align:center">valence</td>
-<td style="text-align:center">0.71</td>
-<td style="text-align:center">0.10</td>
-<td style="text-align:center">0.71</td>
-<td style="text-align:center">0.10</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">DREAMER</td>
-<td style="text-align:center">arousal</td>
-<td style="text-align:center">0.78</td>
-<td style="text-align:center">0.15</td>
-<td style="text-align:center">0.78</td>
-<td style="text-align:center">0.15</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">SEED</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">0.28</td>
-<td style="text-align:center">0.02</td>
-<td style="text-align:center">0.28</td>
-<td style="text-align:center">0.02</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">SEED-IV</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">0.20</td>
-<td style="text-align:center">0.02</td>
-<td style="text-align:center">0.20</td>
-<td style="text-align:center">0.02</td>
+<td>SEED-IV</td>
+<td style="text-align:center">discrete</td>
+<td style="text-align:center">0.34 (0.08)</td>
+<td style="text-align:center">0.20 (0.02)</td>
+<td style="text-align:center">0.33 (0.10)</td>
+<td style="text-align:center">0.20 (0.02)</td>
 </tr>
 </tbody>
 </table>
@@ -467,109 +393,61 @@ load the four datasets used in the challenge (see below) with only a single line
 <table>
 <thead>
 <tr>
-<th>Model</th>
-<th style="text-align:center">Window Size</th>
-<th style="text-align:center">Dataset</th>
+<th>Dataset</th>
 <th style="text-align:center">Measure</th>
-<th style="text-align:center">Accuracy</th>
-<th style="text-align:center">Weighted F1</th>
+<th style="text-align:center">Tsception Accuracy</th>
+<th style="text-align:center">Random Accuracy</th>
+<th style="text-align:center">Tsception Weighted F1</th>
+<th style="text-align:center">Random Weighted F1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">Mahnob-HCI</td>
+<td>MAHNOB</td>
 <td style="text-align:center">valence</td>
 <td style="text-align:center">0.52</td>
+<td style="text-align:center">0.50</td>
 <td style="text-align:center">0.52</td>
+<td style="text-align:center">0.50</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">Mahnob-HCI</td>
+<td>MAHNOB</td>
 <td style="text-align:center">arousal</td>
 <td style="text-align:center">0.54</td>
+<td style="text-align:center">0.49</td>
 <td style="text-align:center">0.54</td>
+<td style="text-align:center">0.50</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">DREAMER</td>
+<td>DREAMER</td>
 <td style="text-align:center">valence</td>
 <td style="text-align:center">0.76</td>
+<td style="text-align:center">0.72</td>
 <td style="text-align:center">0.73</td>
+<td style="text-align:center">0.72</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">DREAMER</td>
+<td>DREAMER</td>
 <td style="text-align:center">arousal</td>
 <td style="text-align:center">0.84</td>
+<td style="text-align:center">0.77</td>
 <td style="text-align:center">0.79</td>
+<td style="text-align:center">0.77</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">Seed</td>
-<td style="text-align:center">-</td>
+<td>SEED</td>
+<td style="text-align:center">discrete</td>
 <td style="text-align:center">0.47</td>
+<td style="text-align:center">0.32</td>
 <td style="text-align:center">0.47</td>
+<td style="text-align:center">0.32</td>
 </tr>
 <tr>
-<td>Tsception</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">Seed-IV</td>
-<td style="text-align:center">-</td>
+<td>SEED-IV</td>
+<td style="text-align:center">discrete</td>
 <td style="text-align:center">0.37</td>
-<td style="text-align:center">0.35</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">Mahnob-hci</td>
-<td style="text-align:center">Arousal</td>
-<td style="text-align:center">0.49</td>
-<td style="text-align:center">0.50</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">Mahnob-hci</td>
-<td style="text-align:center">Valence</td>
-<td style="text-align:center">0.50</td>
-<td style="text-align:center">0.50</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">Dreamer</td>
-<td style="text-align:center">Arousal</td>
-<td style="text-align:center">0.77</td>
-<td style="text-align:center">0.77</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">Dreamer</td>
-<td style="text-align:center">Valence</td>
-<td style="text-align:center">0.72</td>
-<td style="text-align:center">0.72</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">Seed</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">0.32</td>
-<td style="text-align:center">0.32</td>
-</tr>
-<tr>
-<td>random</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">Seed-IV</td>
-<td style="text-align:center">-</td>
 <td style="text-align:center">0.24</td>
+<td style="text-align:center">0.35</td>
 <td style="text-align:center">0.24</td>
 </tr>
 </tbody>

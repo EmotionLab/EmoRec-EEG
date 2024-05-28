@@ -103,20 +103,14 @@ The following table shows baselines for the person-dependent task. We provide tw
 
 
 ---
-| Model     | Window Size |   Dataset  | Measure | Accuracy | SD_Acc | Weighted F1 | SD _F1 |
-|-----------|:-----------:|:----------:|:-------:|:--------:|:------:|:-----------:|:------:|
-| Tsception |      2      | Mahnob-HCI | valence |   0.62   |  0.10  |     0.62    |  0.10  |
-| Tsception |      2      | Mahnob-HCI | arousal |   0.61   |  0.13  |     0.60    |  0.13  |
-| Tsception |      2      |   DREAMER  | valence |   0.72   |  0.14  |     0.72    |  0.14  |
-| Tsception |      2      |   DREAMER  | arousal |   0.79   |  0.16  |     0.79    |  0.16  |
-| Tsception |      2      |    SEED    |    -    |   0.42   |  0.12  |     0.41    |  0.12  |
-| Tsception |      2      |   SEED-IV  |    -    |   0.34   |  0.08  |     0.33    |  0.10  |
-| random    |      -      | Mahnob-HCI | valence |   0.53   |  0.05  |     0.53    |  0.05  |
-| random    |      -      | Mahnob-HCI | arousal |   0.57   |  0.13  |     0.57    |  0.13  |
-| random    |      -      |   DREAMER  | valence |   0.71   |  0.10  |     0.71    |  0.10  |
-| random    |      -      |   DREAMER  | arousal |   0.78   |  0.15  |     0.78    |  0.15  |
-| random    |      -      |    SEED    |    -    |   0.28   |  0.02  |     0.28    |  0.02  |
-| random    |      -      |   SEED-IV  |    -    |   0.20   |  0.02  |     0.20    |  0.02  |
+| Dataset |  Measure | Tsception Accuracy (SD) | Random Accuracy (SD) | Tsception Weighted F1 (SD) | Random Weighted F1 (SD) |
+|---------|:--------:|:-----------------------:|:--------------------:|:--------------------------:|:-----------------------:|
+| MAHNOB  |  valence |       0.62 (0.10)       |      0.53 (0.05)     |         0.62 (0.10)        |       0.53 (0.05)       |
+| MAHNOB  |  arousal |       0.61 (0.13)       |      0.57 (0.13)     |         0.6 (0.13)         |       0.57 (0.13)       |
+| DREAMER |  valence |       0.72 (0.14)       |      0.71 (0.10)     |         0.72 (0.14)        |       0.71 (0.10)       |
+| DREAMER |  arousal |       0.79 (0.16)       |      0.78 (0.15)     |         0.79 (0.16)        |       0.78 (0.15)       |
+| SEED    | discrete |       0.42 (0.12)       |      0.28 (0.02)     |         0.41 (0.12)        |       0.28 (0.02)       |
+| SEED-IV | discrete |       0.34 (0.08)       |      0.20 (0.02)     |         0.33 (0.10)        |       0.20 (0.02)       |
 ---
 
 **Person-independent**
@@ -124,20 +118,14 @@ The following table shows baselines for the person-dependent task. We provide tw
 The following table shows baselines for the person-independent task. We provide two types of baselines here: Random baselines and results that were obtained with an out-of-the-box Tsception approach. The Tsception approach was trained for 500 epochs with a learning rate of 0.001 and no weight decay. As can be seen, the out-of-the box Tsception approach only performs substantially above the random baseline for the DREAMER dataset.
 
 ---
-| Model     | Window Size |   Dataset  | Measure | Accuracy | Weighted F1 |
-|-----------|:-----------:|:----------:|:-------:|:--------:|:-----------:|
-| Tsception |      2      | Mahnob-HCI | valence |   0.52   |     0.52    |
-| Tsception |      2      | Mahnob-HCI | arousal |   0.54   |     0.54    |
-| Tsception |      2      |   DREAMER  | valence |   0.76   |     0.73    |
-| Tsception |      2      |   DREAMER  | arousal |   0.84   |     0.79    |
-| Tsception |      2      |    Seed    |    -    |   0.47   |     0.47    |
-| Tsception |      2      |   Seed-IV  |    -    |   0.37   |     0.35    |
-| random    |      -      | Mahnob-hci | Arousal |   0.49   |     0.50    |
-| random    |      -      | Mahnob-hci | Valence |   0.50   |     0.50    |
-| random    |      -      |   Dreamer  | Arousal |   0.77   |     0.77    |
-| random    |      -      |   Dreamer  | Valence |   0.72   |     0.72    |
-| random    |      -      |    Seed    |    -    |   0.32   |     0.32    |
-| random    |      -      |   Seed-IV  |    -    |   0.24   |     0.24    |
+| Dataset |  Measure | Tsception Accuracy | Random Accuracy | Tsception Weighted F1 | Random Weighted F1 |
+|---------|:--------:|:------------------:|:---------------:|:---------------------:|:------------------:|
+| MAHNOB  |  valence |        0.52        |       0.50      |          0.52         |        0.50        |
+| MAHNOB  |  arousal |        0.54        |       0.49      |          0.54         |        0.50        |
+| DREAMER |  valence |        0.76        |       0.72      |          0.73         |        0.72        |
+| DREAMER |  arousal |        0.84        |       0.77      |          0.79         |        0.77        |
+| SEED    | discrete |        0.47        |       0.32      |          0.47         |        0.32        |
+| SEED-IV | discrete |        0.37        |       0.24      |          0.35         |        0.24        |
 ---
 
 The following prompts were used to obtain the baselines reported above
