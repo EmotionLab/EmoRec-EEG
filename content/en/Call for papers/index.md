@@ -18,18 +18,19 @@ The first workshop on Generalizability of Emotion Recognition from EEG Signals (
    For both tasks, we provide a comprehensive software framework for user-friendly pre-processing, training, and evaluation via the following link: https://github.com/EmotionLab/EEGain All models will be evaluated on four popular EEG emotion recognition datasets (DREAMER, MAHNOB-HCI, SEED, SEED IV). **The framework supports dataset uploading in one line of code, but you need to have downloaded the datasets first.** We have asked the owners of the datasets to promptly reply to future download requests. 
 
       
-2. Reflection Track: Here, we invite submissions concerned with the problem of generalizability of EEG emotion recognition. Both technical papers (max. 4 pages main text + 1 page references) and position papers (max. 2 pages main text + 1 page references) are possible. In contrast to the challenge track, the focus of technical papers is not to improve performance on the evaluation datasets, but to generate new insights into the problem. Evaluation on the challenge datasets is not required but will still be valued. Position papers may be concerned with all aspects pertaining to generalizability of EEG emotion recognition, including - but not limited to - evaluation protocols, data recording protocols, emotion elicitation techniques, EEG hardware considerations, and publishing bias.
+2. Reflection Track: Here, we invite submissions concerned with the problem of generalizability of EEG emotion recognition. Both technical papers (max. 7 pages main text + 1 page optional ethics statement + unlimited references) and position papers (max. 2 pages main text + 1 page references) are possible. In contrast to the challenge track, the focus of technical papers is not to improve performance on the evaluation datasets, but to generate new insights into the problem. Evaluation on the challenge datasets is not required but will still be valued. Position papers may be concerned with all aspects pertaining to generalizability of EEG emotion recognition, including - but not limited to - evaluation protocols, data recording protocols, emotion elicitation techniques, EEG hardware considerations, and publishing bias.
 
+**Please note that all submitted papers should be anonymized for the review process.** 
 
 ## Important Dates
 ---
-**Submission Deadline:** June 12, 2024 <br>
+**Submission Deadline:** ~~June 12 2024~~ June 19 2024<br>
 
 ---
-**Notification:** July 14, 2024 <br>
+**Notification:** July 14 2024 <br>
 
 ---
-**Workshop Day:** September 15, 2024
+**Workshop Day:** September 15 2024
 
 ---
 

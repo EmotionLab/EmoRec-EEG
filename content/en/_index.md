@@ -22,6 +22,10 @@ We will distribute any news and future developments regarding the workshop (e.g.
 
 ## News
 
+2024/06/10: The page limit of technical papers in the Reflection Track has been increased to 7 pages of main text and unlimited references to match the requirements of submissions to the main conference.
+
+2024/06/07: The deadline for submissions to the workshop has been extended by one week until June 19th.
+
 2024/07/09: The baselines against which participants should test their models are now reported on the Challenge page.
 
 2024/05/06: The rules regarding hyper-parameter tuing were specified and can be viewed on the Challenge page.
