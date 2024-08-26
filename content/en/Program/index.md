@@ -44,7 +44,7 @@ menu: main
 
 ---
 
-**5:00-5:55:** Podium discussion
+**5:00-5:55:** Panel discussion
 
 ---
 
