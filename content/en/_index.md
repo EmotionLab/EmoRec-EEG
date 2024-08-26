@@ -22,6 +22,8 @@ We will distribute any news and future developments regarding the workshop (e.g.
 
 ## News
 
+2024/08/26: The workshop program is online.
+
 2024/06/10: The page limit of technical papers in the Reflection Track has been increased to 7 pages of main text and unlimited references to match the requirements of submissions to the main conference.
 
 2024/06/07: The deadline for submissions to the workshop has been extended by one week until June 19th.

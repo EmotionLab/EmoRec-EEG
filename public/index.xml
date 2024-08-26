@@ -43,6 +43,13 @@
       <description>Responsible service provider Responsible for the content of the domain https://emotionlab.github.io/EmoRec-EEG/ from the point of view of § 5 TMG:&#xA;Deutsches Forschungszentrum für Künstliche Intelligenz GmbH (DFKI)&#xA;Management:&#xA;Prof. Dr. Antonio Krüger&#xA;Helmut Ditzer&#xA;Trippstadter Str. 122&#xA;67663 Kaiserslautern&#xA;Germany&#xA;Phone: +49 631 20575 0&#xA;info@dfki.de&#xA;Register Court: Amtsgericht Kaiserslautern&#xA;Register Number: HRB 2313&#xA;ID-Number: DE 148 646 973&#xA;The person responsible for the editorial content of the EmoRec-EEG website within the meaning of § 18 para.</description>
     </item>
     <item>
+      <title>Program</title>
+      <link>//localhost:1313/program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/program/</guid>
+      <description>Location: Advanced Research Centre, Room ARC-237B Time: 15th of September 2024, 2pm - 6pm Schedule 2:00-2:05: Welcome (Müller, P. &amp;amp; Ferrari, L.)&#xA;2:05-2:30: The problem of generalizability in emotion recognition from EEG and the EEGAIN framework (Kukhilava, N., Tsmindashvili, T., &amp;amp; Kalandadze, R.)&#xA;2:30-2:45: Emotion recognition based on EEG signals and deep neural networks architectures (Giannakakis, G., Karasmanoglou, A., Antonakakis M., Vorgia, P., &amp;amp; Zervakis, M.)&#xA;2:45-3:30: The emotion &amp;ldquo;ground-truth&amp;rdquo;: Emotion annotations and generalizability (Chanel, G.</description>
+    </item>
+    <item>
       <title>Organizers</title>
       <link>//localhost:1313/organizers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
