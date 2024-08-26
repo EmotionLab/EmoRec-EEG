@@ -16,7 +16,7 @@ menu: main
 
 ---
 
-**2:00-2:05:** Welcome (Müller, P. & Ferrari, L.)
+**2:00-2:05:** Welcome (Müller, P.)
 
 ---
 
