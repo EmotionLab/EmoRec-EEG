@@ -37,6 +37,7 @@ We will distribute any news and future developments regarding the workshop (e.g.
 2024/03/28: We decided to exclude the AMIGOS and the DEAP datasets from the challenge because it was to difficult for potential participants to get access.
 
 #### Acknowledgements
-The EmoRec EEG workshop is supported by the European Commission HORIZON EUROPE WIDERA-2021-ACCESS-03 Grant Project GAIN (grant agreement no.101078950).
-[![Alt text](https://i.postimg.cc/256TtqYv/eu-flag-3.jpg)](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en)
-[![Alt text](https://i.postimg.cc/mgTmQX6m/mcim-1.png)](https://micm.edu.ge/en/)
+The EmoRec EEG workshop is funded by the European Union under Horizon Europe (Project GAIN grant agreement no.101078950).
+
+[![Alt text](https://i.postimg.cc/TP4PPzcN/EU-flag-Horizon-Europe-2.jpg)](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en)
+[![Alt text](https://i.postimg.cc/J0V8SM1J/gain-logo-4.png)](https://micm.edu.ge/en/)
